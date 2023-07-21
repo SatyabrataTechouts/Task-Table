@@ -1,6 +1,8 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
+
+
 const TableRow = ({number, name, age, occupation }:any) => {
     return (
       <View style={styles.row}>
@@ -11,10 +13,13 @@ const TableRow = ({number, name, age, occupation }:any) => {
       </View>
     );
   };
-const Home = () => {
+const Home =  () => {
+    
+   
     
   return (
-    <ScrollView>
+
+    <ScrollView >
     <ScrollView horizontal>
     <View style={styles.table}>
       <TableRow number={"number"} name="Name" age="Age" occupation="occupation" />
